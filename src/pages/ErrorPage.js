@@ -1,9 +1,7 @@
-function ErrorPage()
-{
-    return(
+function ErrorPage() {
+    return (
         <>
-        <h1> Error! Page not found </h1>
-        
+            <h1> Error! Page not found </h1>
         </>
     )
 }
