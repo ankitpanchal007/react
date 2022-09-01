@@ -6,7 +6,8 @@ export default function Favoritegame() {
         <>
             <h1>My Favorate Game is {game}</h1>
             <button type="button" onClick={() => setgame('cricket')}> Cricket </button>
-            <button type="button" onClick={() => setgame('football')}> Football </button>
+            <button type="button" onClick={() => setgame('football')}> Football </button> 
+            
             <button type="button" onClick={() => setgame('hockey')}> Hockey </button>
         </>
 
