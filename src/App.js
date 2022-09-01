@@ -1,22 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-import Fun from './New';
 import React from 'react';
-import App1 from './app1';
-import Cls from './cls';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import './App.css';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import ErrorPage from './pages/ErrorPage';
 
 
 class App extends React.Component {
- 
- render(){ return (
-    <React.Fragment>
-  <h1 style={{color:'red', backgroundColor: "lightblue", padding: "15px",
-    fontFamily: "Sans-Serif"}}>this is app</h1>
-  <Fun/>
-  <App1/>
-  <Cls/>
-  </React.Fragment>
-    )}
+  render() {
+    return (
+      <React.Fragment>
+        <Router>
+          <nav>
+            <Link to='/'> HomePage</Link>
+            <br></br>
+            <Link to='/About'> AboutPage</Link>
+          </nav>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/*" element={<ErrorPage />} />
+          </Routes>
+        </Router>
+
+      </React.Fragment>
+    )
+  }
 }
 
 export default App;
