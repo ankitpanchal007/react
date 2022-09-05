@@ -12,7 +12,9 @@ export default function Example() {
             <button onClick={() => setCount(count + 1)}>
                 Click To Increase
             </button>
-            <button onClick={sub}>Click To Decrease </button>
+            <button onClick={sub}>
+                Click To Decrease
+            </button>
         </div>
     );
 }

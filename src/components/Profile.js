@@ -7,6 +7,7 @@ function Profile() {
         <div>
             <h1>Profile Page</h1>
             <p>name:{user.name}</p>
+            {/* <input id='name1' placeholder='write name'></input> */}
             <p>age:{user.age}</p>
             <p>email:{user.email}</p>
         </div>

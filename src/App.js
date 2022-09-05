@@ -4,24 +4,22 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import ErrorPage from './pages/ErrorPage';
-import Login from './components/Login';
+import Action from './components/Action';
 import Profile from './components/Profile';
-
 class App extends React.Component {
   render() {
+
     return (
       <>
-      <Login/>
-      <Profile/>
-     
+   
+        <Action />
+        <Profile />
         <Router>
-                    
           {/* <nav>
             <Link to='/'> HomePage</Link>
             <br></br>
             <Link to='/About'> AboutPage</Link>
           </nav> */}
-          
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
@@ -32,10 +30,8 @@ class App extends React.Component {
             </Route> */}
           </Routes>
         </Router>
-          
       </>
     )
   }
 }
-
 export default App;

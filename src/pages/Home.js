@@ -8,12 +8,12 @@ function Home()
     return(
        
         <>
-        <h1>This is Home page</h1>
+        {/* <h1>This is Home page</h1>
         <button onClick={()=>{navigate("/about")}}>About page</button>
         {/* <Favoritegame/> */}
-        <Example/>
+        {/* <Example/>
         <Favoritegame/>
-        <Timer/>
+        <Timer/>  */}
         </>
     )
 }
