@@ -4,11 +4,15 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import ErrorPage from './pages/ErrorPage';
+import Login from './components/Login';
+import Profile from './components/Profile';
 
 class App extends React.Component {
   render() {
     return (
       <>
+      <Login/>
+      <Profile/>
      
         <Router>
                     
@@ -22,10 +26,10 @@ class App extends React.Component {
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/*" element={<ErrorPage />} />
-            <Route path="/product" element={<product />} >
+            {/* <Route path="/product" element={<product />} >
             <Route path="prod1" element={<prod1 />} />
             <Route path="prod2" element={<prod2 />} />
-            </Route>
+            </Route> */}
           </Routes>
         </Router>
           
